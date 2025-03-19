@@ -6,11 +6,11 @@
     },
     "frame": {
       "version": "1",
-      "name": "Example Frame",
-      "iconUrl": "https://gas-tracker-farcaster.vercel.app/icon.png",
+      "name": "Gas Tracker",
+      "iconUrl": "https://gas-tracker-farcaster.vercel.app/splash.png",
       "homeUrl": "https://gas-tracker-farcaster.vercel.app",
-      "imageUrl": "https://gas-tracker-farcaster.vercel.app/image.png",
-      "buttonTitle": "Check this out",
+      "imageUrl": "https://gas-tracker-farcaster.vercel.app/splash.png",
+      "buttonTitle": "Track Gas",
       "splashImageUrl": "https://gas-tracker-farcaster.vercel.app/splash.png",
       "splashBackgroundColor": "#eeccff",
       "webhookUrl": "https://gas-tracker-farcaster.vercel.app/api/webhook"
