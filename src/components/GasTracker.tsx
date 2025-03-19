@@ -1,11 +1,10 @@
-import { useEffect, useCallback, useState } from 'react';
-import sdk, { type FrameContext } from '@farcaster/frame-sdk';
+import { useEffect, useState } from 'react';
+import sdk from '@farcaster/frame-sdk';
 
 export default function GasTracker() {
     const [ethGas, setEthGas] = useState<{ safe: string; average: string; fast: string } | null>(null);
     const [baseGas, setBaseGas] = useState<{ safe: string; average: string; fast: string } | null>(null);
     const [isSDKLoaded, setIsSDKLoaded] = useState(false);
-    const [context, setContext] = useState<FrameContext>();
 
     useEffect(() => {
         const fetchGas = async () => {
@@ -32,7 +31,7 @@ export default function GasTracker() {
             
                 const gasPriceGwei = parseInt(data.result, 16) / 1e9;
 
-                let parsedData = {
+                const parsedData = {
                     safe: gasPriceGwei.toFixed(2),
                     average: (gasPriceGwei * 1.1).toFixed(2), // Estimated average (10% increase)
                     fast: (gasPriceGwei * 1.2).toFixed(2), // Estimated fast (20% increase)
@@ -67,7 +66,7 @@ export default function GasTracker() {
           
               const gasPriceGwei = parseInt(data.result, 16) / 1e9;
 
-              let parsedData = {
+              const parsedData = {
                   safe: gasPriceGwei.toFixed(2),
                   average: (gasPriceGwei * 1.1).toFixed(2), // Estimated average (10% increase)
                   fast: (gasPriceGwei * 1.2).toFixed(2), // Estimated fast (20% increase)
@@ -88,7 +87,6 @@ export default function GasTracker() {
 
     useEffect(() => {
         const load = async () => {
-          setContext(await sdk.context);
           sdk.actions.ready();
         };
         if (sdk && !isSDKLoaded) {

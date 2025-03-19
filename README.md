@@ -1,1 +1,1 @@
-# This is an Warpcast fram for Gas Tracker of Eth Mainnet and base
+# This is an Warpcast frame for Gas Tracker of Eth Mainnet and base
