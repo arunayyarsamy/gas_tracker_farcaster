@@ -1,0 +1,18 @@
+{
+    "accountAssociation": {
+      "header": "eyJmaWQiOjEwMTE3NDMsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhBMjcyNjBjMjBiODgxMjkzNkM4ZDU4ODFDMDQzMTUzY0NCQjNhNUE2In0",
+      "payload": "eyJkb21haW4iOiJnYXMtdHJhY2tlci1mYXJjYXN0ZXIudmVyY2VsLmFwcCJ9",
+      "signature": "MHg4YTI5ODYyNmRlOWZlNjUzMDNiZDdkZmU5NjYwODcxMjJiYmIzYzY3M2E5YjQzNjZlZTg5YmEzNzJkMmVmNWQxMDVjMjIwM2M0YzQ4OWUyZWYzY2JmZTQ4YTQ0MzJhNDRlZWRkZDc3N2Y0ZDczMGY1YWQyNDBjOGVmYzI3MTE2ZjFi"
+    },
+    "frame": {
+      "version": "1",
+      "name": "Example Frame",
+      "iconUrl": "https://gas-tracker-farcaster.vercel.app/icon.png",
+      "homeUrl": "https://gas-tracker-farcaster.vercel.app",
+      "imageUrl": "https://gas-tracker-farcaster.vercel.app/image.png",
+      "buttonTitle": "Check this out",
+      "splashImageUrl": "https://gas-tracker-farcaster.vercel.app/splash.png",
+      "splashBackgroundColor": "#eeccff",
+      "webhookUrl": "https://gas-tracker-farcaster.vercel.app/api/webhook"
+    }
+  }
